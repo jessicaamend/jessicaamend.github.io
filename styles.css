@@ -1,4 +1,46 @@
-*{background-color:rgb(250, 204, 177);}
+*{background-color: #EFF1F3;}
+
+
+/* body */
 body{font-family:'Times New Roman', Times, serif}
-p{color:navy;}
-h1{color:maroon;}
+p{color:#223843;}
+
+/* headings */
+h1{color:#D77A61;}
+h2{color:#D8B4A0}
+
+/* nav */
+ ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background-color:#D8B4A0;
+    overflow:hidden;
+    position: relative;
+   
+}
+ li{
+    float:left;
+}
+ li a{
+    display:block;
+    color:#223843;
+    background-color: #D8B4A0;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border: 1px solid #D77A61;
+    align-self: stretch;
+}
+li a:hover{
+    background-color:#D77A61;
+}
+#stamp {
+    position:fixed; 
+    float:right;
+    top:30px;
+    left:50px;
+   
+}
