@@ -32,6 +32,10 @@ nav {
     overflow:hidden;
     position: relative;
 }
+
+nav li {
+    flex-grow: 1;
+}
  nav li a{
     display:block;
     color:#223843;
@@ -40,7 +44,7 @@ nav {
     text-decoration: none;
     border-right: 1px solid #D77A61;
     align-self: stretch;
-    padding: 1em 7em;
+    padding: 1em 1em;
 }
 nav li a:hover{
     background-color:#D77A61;
