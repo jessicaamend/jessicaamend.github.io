@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Exercises </title>
+
+        <style>
+            .target{
+            background-color: #ccc;
+            width:50px;
+            height:50px;
+        }
+             
+            .moved{
+                transform: translateX(200px);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Javascript Exercises</h1>
+
+        <h2> Hello World</h2>
+        <button onclick="helloWorld()">Hello World!</button>
+
+        <h2>Hello Jessica</h2>
+        <button onclick="hello('Jessica')">Hello Jessica</button>
+
+        <h2>Hello Name</h2>
+        <button onclick="helloName()">Hello NAME</button>
+
+        <h2>Hello Confirm</h2>
+        <button onclick="helloConfirm()">Hello Confirm</button>
+
+        <h2>Count to Ten</h2>
+        <button onclick="countToTen()">Count to Ten</button>
+
+        <h2>Change Div Color</h2>
+        <div id="change-color-target" class="target" style="background-color: rbg (255,204,0);"></div>
+        <button onclick="changeColor()">change the div</button>
+
+        <h2>Move Div Using Class</h2>
+        <div id="move-div-target" class="target"></div>
+        <button onclick="moveDivWithClass()" id="move-div-btn">Move the Div </button>
+    
+        
+
+        <script>
+            function helloWorld(){
+                alert("Hello World");
+            }
+
+            function hello(name){
+                alert("Hello " + name + "!");
+            }
+
+            function helloName(){
+                var name = prompt("Enter your name");
+                alert("Hello " + name +"!");
+               
+            }
+            
+            function helloConfirm(){
+                var name = prompt("What is your name?");
+                var confirmed = confirm("Are you sure " + name + " is your name?");
+
+                if (confirmed) {
+                    alert("Hello " + name +"!"); 
+                }
+                else {
+                    name = prompt("What is your real name");
+                    confirmed = confirm ("Are you sure " + name + " is your name?");
+                    if (confirmed) {
+                        alert("Hello " + name +"!");
+                    }
+                } 
+            }
+
+            function countToTen(){
+                for(var i = 1; i<=10; i++){
+                alert (i);
+                }
+            }
+
+            function changeColor(){
+                document.getElementById("change-color-target").style.backgroundColor="#fc0";
+            }
+
+            function moveDivWithClass(){
+                document.getElementById("move-div-target").classList.toggle("moved")
+            }
+                
+                        
+                
+               
+        </script>
+
+        
+
+       
+
+        
+    </body>
+
+
+
+</html>
